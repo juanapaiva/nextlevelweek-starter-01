@@ -4,29 +4,29 @@
   #page-home {
     background-position-x: 70vw;
   }
-
   #page-home .content {
     align-items: center;
     text-align: center;
   }
-
   header a {
     bottom: 48px;
-
     left: 50%;
     transform: translateX(-50%);
   }
-
   main {
     align-items: center;
   }
-
   #page-search-results .cards {
     grid-template-columns: 1fr;
   }
-
   #page-home header a {
     position: absolute;
+  }
+  #page-create-point .field-group {
+    flex-direction: column;
+  }
+  #page-create-point .field-group .field + .field {
+    margin-left: 0;
   }
 }
 
