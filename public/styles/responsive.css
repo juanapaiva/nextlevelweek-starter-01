@@ -24,6 +24,10 @@
   #page-search-results .cards {
     grid-template-columns: 1fr;
   }
+
+  #page-home header a {
+    position: absolute;
+  }
 }
 
 @media (min-width: 1700px) {

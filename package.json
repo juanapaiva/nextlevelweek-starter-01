@@ -1,0 +1,24 @@
+{
+  "name": "nlw-starter",
+  "version": "1.0.0",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NyraTyto/nextlevelweek-starter-01.git"
+  },
+  "author": "Juana Paiva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NyraTyto/nextlevelweek-starter-01/issues"
+  },
+  "homepage": "https://github.com/NyraTyto/nextlevelweek-starter-01#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
