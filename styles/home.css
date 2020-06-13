@@ -15,33 +15,12 @@
   flex-direction: column;
 }
 
-#page-home header {
-  margin-top: 48px;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-#page-home header a {
-  display: flex;
-
-  color: var(--title-color);
-  font-weight: 700;
-}
-
 #page-home header a span {
-  margin-right: 16px;
-  display: flex;
-
   background-image: url('../assets/log-in.svg');
-
-  width: 20px;
-  height: 20px;
 }
 
 #page-home main {
-  max-width: 560px;
+  max-width: 544px;
 
   flex: 1;
 
