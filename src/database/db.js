@@ -65,7 +65,7 @@ module.exports = db;
 //   });
 
 //   // Deletar dados
-//   db.run(`DELETE FROM places WHERE id = ?`, [1], function(err) {
+//   db.run(`DELETE FROM places WHERE id = ?`, [2], function(err) {
 //     if (err)
 //       return console.log(err);
 

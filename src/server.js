@@ -26,7 +26,16 @@ server.get("/create-point", (req, res) => {
 
 // Rota Search Results
 server.get("/search", (req, res) => {
-  return res.render("search-results.html");
+  // Pegar dados
+  db.all(`SELECT * FROM places`, function (err, rows) {
+    if (err)
+      return console.log(err);
+
+    const total = rows.length;
+    
+    // Renderizar página
+    return res.render("search-results.html", { places: rows, total });
+  });
 });
 
 // Ligar o servidor na porta 3000
