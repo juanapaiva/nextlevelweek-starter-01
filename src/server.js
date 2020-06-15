@@ -12,6 +12,7 @@ server.use(express.urlencoded({ extended: true }));
 
 // Utilizando Template Engine
 const nunjucks = require("nunjucks");
+
 nunjucks.configure("src/views", {
   express: server,
   noCache: true
@@ -68,8 +69,14 @@ server.post("/savepoint", (req, res) => {
 
 // Rota Search Results
 server.get("/search", (req, res) => {
+  const search = req.query.search;
+
+  if (search == "") {
+    return res.render("search-results.html", { total: 0 });
+  }
+
   // Pegar dados
-  db.all(`SELECT * FROM places`, function (err, rows) {
+  db.all(`SELECT * FROM places WHERE city LIKE '%${search}%'`, function (err, rows) {
     if (err)
       return console.log(err);
 
