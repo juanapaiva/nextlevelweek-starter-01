@@ -30,11 +30,11 @@
 }
 
 #page-home main h1 {
-  font-size: 54px;
+  font-size: 3.375rem;
 }
 
 #page-home main p {
-  font-size: 24px;
+  font-size: 1.5em;
   line-height: 38px;
   margin-top: 24px;
 }

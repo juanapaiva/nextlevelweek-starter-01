@@ -22,3 +22,7 @@ header a span {
   width: 20px;
   height: 20px;
 }
+
+header i {
+  font-style: normal;
+}
